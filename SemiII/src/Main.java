@@ -7,7 +7,7 @@ public class Main {
         int opcao;
 
         do {
-            // Menu principal
+        
             System.out.println("\nBem-vindo ao seu Gerenciador de Músicas!");
             System.out.println("1. Próxima música");
             System.out.println("2. Música anterior");
@@ -19,7 +19,7 @@ public class Main {
             System.out.println("8. Sair");
             System.out.print("Digite a opção desejada: ");
 
-            // Lendo a opção escolhida
+            
             opcao = scanner.nextInt();
             scanner.nextLine();
 
