@@ -12,7 +12,7 @@ public class Playlist {
         this.atual = null;
     }
 
-    // Adicionar música
+    
     public void adicionarNoFim(Musica musica) {
         No novo = new No(musica);
         if (primeiro == null) {
@@ -26,7 +26,7 @@ public class Playlist {
         }
     }
 
-    // Adicionar música em uma posição específica
+    
     public void adicionarNaPosicao(Musica musica, int posicao) {
         No novo = new No(musica);
         if (posicao == 1) {
@@ -60,7 +60,7 @@ public class Playlist {
         }
     }
 
-    // Remover música por título
+    
     public void removerPorTitulo(String titulo) {
         No temp = primeiro;
         while (temp != null) {
@@ -83,7 +83,7 @@ public class Playlist {
         System.out.println("Música não encontrada.");
     }
 
-    // Próxima música
+
     public void proximaMusica() {
         if (atual != null && atual.getProximo() != null) {
             atual = atual.getProximo();
@@ -93,7 +93,7 @@ public class Playlist {
         }
     }
 
-    // Música anterior
+    
     public void musicaAnterior() {
         if (atual != null && atual.getAnterior() != null) {
             atual = atual.getAnterior();
@@ -103,7 +103,7 @@ public class Playlist {
         }
     }
 
-    // Tocar música atual
+    
     public void tocarMusica() {
         if (atual != null) {
             System.out.println("Tocando agora: " + atual.getMusica());
@@ -112,7 +112,7 @@ public class Playlist {
         }
     }
 
-    // Listar todas as músicas
+    
     public void listarMusicas() {
         No temp = primeiro;
         while (temp != null) {
@@ -121,7 +121,7 @@ public class Playlist {
         }
     }
 
-    // Ordenar por título
+    
     public void ordenarPorTitulo() {
         if (primeiro == null || primeiro.getProximo() == null) return;
 
@@ -137,7 +137,7 @@ public class Playlist {
         System.out.println("Playlist ordenada por título.");
     }
 
-    // Ordenar por artista
+    
     public void ordenarPorArtista() {
         if (primeiro == null || primeiro.getProximo() == null) return;
 
